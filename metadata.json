@@ -1,0 +1,6 @@
+{
+  "name": "로드런 (Road Run)",
+  "description": "60초 동안 지상과 공중의 연료를 수집하며 질주하는 2D 아케이드 러닝 게임",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

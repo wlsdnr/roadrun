@@ -532,7 +532,11 @@ export const GameCanvas: React.FC<GameCanvasProps> = ({
 
         // Rounded canister shape
         ctx.beginPath();
-        ctx.roundRect(2, 4, fuel.width - 4, fuel.height - 6, 4);
+        if (typeof ctx.roundRect === 'function') {
+          ctx.roundRect(2, 4, fuel.width - 4, fuel.height - 6, 4);
+        } else {
+          ctx.rect(2, 4, fuel.width - 4, fuel.height - 6);
+        }
         ctx.fill();
 
         // Metallic Handle/Cap on top
